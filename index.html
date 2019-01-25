@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background: black;
+		}
+		#main {
+			display: block;
+			max-width: 100vh;
+			max-height: 100vh;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<img id="main" />
+	<script type="text/javascript">
+		const sources = [
+			"/img/vivek1.jpg",
+		];
+		document.getElementById("main").src = sources[Math.floor(Math.random()*sources.length)];
+	</script>
+</body>
+</html>
